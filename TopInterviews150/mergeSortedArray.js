@@ -23,21 +23,24 @@ function merge(nums1, m, nums2, n) {
 
   nums1 = nums1.slice(0, m);
 
+  // iterate through each array
   while (i < nums1.length && j < nums2.length) {
     if (nums2[j] > nums1[i]) {
-      result.push(nums1[i]);
-      i++;
+      result.push(nums1[i]); // if value of nums1[i] is smaller than nums2[j] push the value of nums1[i] to result
+      i++; // and increment i
     } else {
-      result.push(nums2[j]);
-      j++;
+      result.push(nums2[j]); // if value of nums1[i] is greater than nums2[j] then we push the value of nums2[j] to result
+      j++; // and increment j
     }
   }
 
+  // push the left over values from nums1 to result
   while (i < nums1.length) {
     result.push(nums1[i]);
     i++;
   }
 
+  // push the left over values from nums2 to result
   while (j < nums2.length) {
     result.push(nums2[j]);
     j++;
