@@ -1,6 +1,6 @@
 public class Searcha2DMatrix {
     public boolean search(int[][] matrix, int target) {
-        int left = 0, right = matrix.length, n = matrix[0].length;
+        int left = 0, right = matrix.length * matrix[0].length - 1, n = matrix[0].length;
 
         while(left <= right) {
             int middle = (left + right) / 2;
