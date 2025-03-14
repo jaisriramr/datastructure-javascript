@@ -1,3 +1,4 @@
 - Solving Problems from Leet code
 - Avoid using var because it has function scope, which can lead to unintended variable hoisting and global pollution.
 - Use let instead, as it has block scope and reduces the risk of unintended variable access.
+- In Sorted Question always remember to go from 0 to N and in binary search for insert
