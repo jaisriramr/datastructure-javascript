@@ -7,9 +7,6 @@ public class Searcha2DMatrix {
             int row = middle / 2;
             int col = middle % 2;
 
-            System.out.println("Row " + row + " col" + col + " " + matrix[row][col]);
-            // System.out.println("Col " + col + " " + matrix[row][col]);
-
             int currentMiddle = matrix[row][col];
             if(currentMiddle == target) {
                 return true;

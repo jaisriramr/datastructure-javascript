@@ -3,3 +3,4 @@
 - Use let instead, as it has block scope and reduces the risk of unintended variable access.
 - In Sorted Question always remember to go from 0 to N and in binary search for insert
 - In 2d matrix in binary remember about row and col -> row = middle / 2 and col = middle % 2 and every other pattern is same we just change the search in given matrix pattern matrix[row][col] ;
+- in binary search if we want to find the min val for rotated array check the middle value against right index
